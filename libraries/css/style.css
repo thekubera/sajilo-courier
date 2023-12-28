@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	/*width: 100vw;
+	height: 100vh;*/
+	/*font-family: Lato;*/
+}
+
+/* Style related to home page (views/index.php) */
+
+/* Info cards styling goes from here */
+#info-card {
+    height: 400px;
+    padding: 2px!important;
+}
+.card {
+    height: 350px;
+    flex: 0 0 350px;
+    border-radius: 5% !important;
+    transition: background 0.3s ease-in-out;
+}
+.card:nth-of-type(1), .card:nth-of-type(2) {
+    margin-right: 20px;
+}
+.card:hover {
+    transform: scale(1.05);
+    background: teal!important;
+    color: white;
+}
+.card:hover i {
+    color: white !important;
+}
+
+/* Branch Section */
+.table-responsive {
+    height: 80vh;
+    width: 95%;
+    margin: auto;
+    padding: .5em;
+}
+
+
+
+/*Login Section*/
+.login-container {
+    height: 90vh;
+}
+.login-card {
+    background: #ecf0f1;
+    width: 450px;
+    height: 450px;
+}
+.login-card > input {
+    outline: none;
+    border: 0.1em solid #000;
+    width: 80%;
+    padding: 0.8em;
+    border-radius: 1.3em;
+}
+.login-card > input:focus {
+    border: 0.1em solid #3498db;
+}
+
+/*--------------------------------------------
+   Forgot Password
+----------------------------------------------*/
+#forgot-password-container {
+    margin-top: 8rem !important;
+    width: 50vw !important;
+    height: 50vh;
+}
+
+/* For form validation */
+small {
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.error {
+    color: #FA1700;
+    font-size: 1rem;  
+    visibility: visible !important;
+}
+/*About Us Section*/
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+.c-image {
+    max-width: 75% !important;
+}
+.dev-profile {
+    height: 100px;
+    width: 100px;
+}
+
+.page-footer {
+    position: relative;
+}
+
+/* Media queries for responsive design */
+
+/* Queries for info card section */
+@media screen and (max-width: 1130px) {
+    .card {
+        width: 300px;
+        flex: 0 0 300px;
+    }   
+}
+@media screen and (max-width: 1020px) {
+    .card {
+        width: 250px;
+        flex: 0 0 250px;
+    }   
+}
+@media screen and (max-width: 830px) {
+    #info-card {
+        flex-direction: column!important;
+        height: calc(400px + 400px + 550px);
+    }
+    .card {
+        width: 90%;
+        flex: 0 0 400px;
+        margin-right: 0!important;
+        margin-bottom: 2em;
+    }
+}
+@media screen and (max-width: 500px) {
+    #info-card {
+        height: calc(300px + 300px + 400px);
+    }
+    .card {
+        width: 90%;
+        flex: 0 0 300px;
+    }
+    .h1 {
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 300px) {
+    #info-card {
+        height: calc(200px + 200px + 450px);
+    }
+    .card {
+        width: 90%;
+        flex: 0 0 200px;
+    }
+    .h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Queries for login section */
+@media screen and (max-width: 460px) {
+    .login-container {
+        margin-top: 0.1em !important;
+    }
+    .login-card {
+        width: 300px;
+    }
+}
+
+/* Style related to (views/index.php) end here. */
