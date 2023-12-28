@@ -21,6 +21,24 @@ The system includes the following functionalities:
 
 During this project, I gained lots of experience to move forward and this is showcased as my learning path. As an academic project, I created proper reports and figures such as Data Flow Diagram, Entity Relationship Diagram, Sequence Diagram, Use Case Diagram. Some of them are included in the folder called "figures" which you can access for reference.
 
+## Screenshots
+
+![Landing Page](screenshots/landing_page.PNG)
+
+![Login Page](screenshots/login_page.PNG)
+
+![Branch Info Page](screenshots/branch_info.PNG)
+
+![Branch CRUD Page](screenshots/branch_CRUD_page.PNG)
+
+![Staff CRUD Page](screenshots/staff_CRUD_page.PNG)
+
+![Courier Info Page](screenshots/courier_info.PNG)
+
+![Courier Detail Part 1](screenshots/courier_detail_1.PNG)
+![Courier Detail Part 2](screenshots/courier_detail_2.PNG)
+
+
 ## Project Setup
 
 1. Clone the repo.
